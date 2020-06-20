@@ -1,0 +1,140 @@
+#contactus{
+background-color: #660033;
+
+height: 110vh;
+width:100%;
+padding:2%;
+}
+.container{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+#contactus .container h2{
+     text-align: center;
+     /*text-decoration: underline;*/
+     /*text-underline-position: under;*/
+     color:white;
+     font-family:"Double Struck";
+     font-weight: bold;
+     font-size: 3vw;
+
+     letter-spacing: 2px;
+}
+#contactus .container p{
+  text-align: center;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3%;
+  color: white;
+  letter-spacing: 3px;
+}
+.contact-form i.fa{
+  font-size: 30px;
+  padding: 5%;
+  background-color: none;
+  margin:10%;
+  border-radius: 80%;
+  cursor: pointer;
+  border:2px solid rgb(190,190,190);
+  color: rgb(190,190,190);
+  }
+.contact-form i.fa:hover{
+  cursor: pointer;
+  border: 2px solid #fff;
+  color:#fff;
+}
+.contact-form{
+  display: grid;
+  grid-template-columns: 750px 550px ;
+  grid-gap: 5;
+}
+.form-info{
+  font-size: 30px;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: 0px;
+}
+.input{
+  padding: 5px;
+  margin:10px;
+  width: 100%;
+  background-color: rgba(136,133,133,0.5);
+  color:#660033 ; 
+  border:none;
+  outline: none;
+}
+.input::placeholder{
+  color:#660033;
+}
+textarea{
+  padding: 9px;
+  margin:9px;
+  background-color: white;
+  color: #660033;
+  border:none;
+  outline:none;
+}
+textarea::placeholder{
+  color:#660033;
+}
+.submit{
+  
+  width:15vw;
+  background-color: #febd01;
+  padding: 4px;
+  outline: none;
+  font-size: 2vw;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  margin-top: 4%;
+  border: 2px solid white;
+  color: white;
+}
+.submit:hover{
+  border:1px solid ;
+  color: 660033;
+  cursor: pointer;
+}
+/*media queris*/
+@media(max-width:768px){
+  #contactus{
+    height: 130vh;
+  }
+  #contactus .contact-form{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #contactus .submit{
+    width:60%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

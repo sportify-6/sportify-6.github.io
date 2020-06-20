@@ -1,0 +1,190 @@
+* {box-sizing: border-box}
+
+.login_page img{
+  width: 100%;
+  height: 700px;
+  top: 20px;
+  left: 12%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=button]{
+  background-color: #660033;
+  color: #fff;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin:  0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+button a{
+  text-decoration: none;
+}
+
+.signupbtn{
+  background-color: #660033;
+  height:30px;
+  font-weight: bold;
+}
+
+.signupbtn:hover{
+  opacity: .7;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 120px;
+  margin: 10px;
+}
+
+.container {
+  padding: 16px;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0%;
+  top: 0%;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  /*background-color: #ff7f00;*/
+  padding-top: 50px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #660033;
+  border-radius: 15px 50px 0px 0px;
+  color: white;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 5px solid #660033;
+  border-radius: 15px 50px;
+  width: 50%; 
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close {
+  position: sticky;
+  left: 100%;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+
+}
+
+.login_page{
+  /*background-image: url(track_bg.jpeg);*/
+  background-size: cover;
+  position: relative;
+  margin: 0px;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix{
+  justify-content: center;
+  align-items: center;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.login_page #btn_login1{
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 42vw;
+  border: 5px solid #660033;
+  border-radius: 50px;
+  font-style: bold;
+  font-family: "Imprint MT Shadow";
+  font-size: 15px;
+}
+
+.login_page #btn_login2{
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 65%;
+  left: 42vw;
+  border: 5px solid #660033;
+  border-radius: 50px;
+  font-family: "Imprint MT Shadow";
+  font-size: 15px;
+}
+
+#btn_login1:hover,
+#btn_login2:hover{
+  background-color: #660033;
+}
+@media (max-width: 1118px){
+  #login_page img{
+    left: 8%;
+  }
+}
+@media (max-width: 944px){
+ #login_page img{
+    left: 6%;
+    top: 20px;
+    width: 50px;
+  }
+  nav ul li a{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+
+
+}

@@ -1,0 +1,200 @@
+body{
+	overflow-y: scroll;
+}
+
+.navbar-nav {
+      flex-direction: row;
+}
+
+.ml-auto{
+	left:auto !important;
+	right:10px;
+	float: right;
+}
+
+nav{
+	height: 60px;
+}
+
+nav a{
+	color: #FFF;
+	font-style: bold;
+	font-size: 25px;
+	padding: 10px;
+	font-family: "Imprint MT Shadow"
+}
+
+.card-img{
+	width: 70%;
+	height: 80%;
+	margin-left: 20px;
+}
+
+.container1{
+	position: relative;
+	top: 55px;
+	left: 5%;
+	margin-top: 10px;
+}
+
+button{
+	background-color: #660033;
+	color: white;
+}
+
+button:hover{
+	box-shadow: 0 0 5px #000;
+}
+
+.card{
+	padding: 10px;
+}
+
+.container-fluid{
+	position: absolute;
+	top: 260px;
+	/*justify-content: center;
+	align-items: center;*/
+}
+
+.whole{
+	position: relative;
+}
+
+.container_fluid2{
+	position: absolute;
+	top: 800px;
+	justify-content: center;
+	align-items: center;
+	margin:20px;
+}
+
+.container{
+	margin: 20px;
+}
+
+h1{
+	background-color: #660033;
+	color: white;
+	margin: 20px;
+	/*margin-right: 400px;*/
+	width: 600px;
+	padding: 5px;	
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0%;
+  top: 0%;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  /*background-color: #ff7f00;*/
+  padding-top: 50px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #660033;
+  border-radius: 15px 50px 0px 0px;
+  color: white;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 5px solid #660033;
+  border-radius: 15px 50px;
+  width: 50%; 
+}
+
+.close {
+  position: sticky;
+  left: 100%;
+  top: 150px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+h2{
+	margin: 10px;
+}
+
+p{
+	margin: 10px;
+}
+
+video{
+	align-items: center;
+}
+
+h6{
+	margin: 10px;
+}
+
+input{
+	margin: 10px;
+	padding: 10px;
+}
+
+.profile-card{
+	width:300px;
+	margin:30px 5px 5px 900px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #660033;
+	color: #fff;
+	position: fixed;
+	top: 35px;
+	right: 10px;
+	box-shadow: 0 4px 10px 0(0,0,0,0.5);
+}
+
+.image-container{
+	position:relative;
+	margin: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.button{
+	color:#660033;
+	font-family: "proxima nova";
+	font-weight: 50;
+	font-size: 20;
+	border:solid 2px #660033;
+	border-radius: 50px;
+}
+
+.main-container p{
+	padding-left: 200;
+}
+
+.change_coach{
+	position: fixed;
+	bottom: -1.5%;
+	right: 80px;
+}
+
+.change_coach .ccbtn{
+	background-color: #660033;
+	color: white;
+}
+
+.change_coach .ccbtn:hover{
+	box-shadow: 0 0 5px #000;
+	opacity: 0.5;
+}
+
+

@@ -1,0 +1,159 @@
+*{
+box-sizing: border-box;
+}
+
+.testimonials{
+  margin: -8vh 0;
+font-family: sans-serif;
+/*min-height: 70vh;*/
+/*background-color: #660033;*/
+/*float: left;-------*/
+width: 100%;
+height: 120vh;
+padding:10px 15px;
+/*background-color: black;*/
+}
+
+.testimonials .container{
+margin: 3;
+text-align: center;
+color:000000;
+font-weight: bold;
+}
+
+.testimonials .title{
+margin: 17vh 5vw;
+}
+
+.testimonials .title h1{
+text-align: center;
+color:000000;
+text-transform: uppercase;
+font-family:"Double Struck";
+font-weight: bold;
+font-size: 3vw;
+}
+
+.testimonials .sliders{
+border:1px solid #333333;
+background-color: #660033;
+max-width: 600px;
+margin:auto;
+text-align: center;
+padding: 30px;
+}
+
+.testimonials .sliders .slide{
+display: none;
+}
+
+.testimonials .sliders .slide.active{
+display: block;
+animation: slide 1s ease;
+}
+.testimonials .sliders .slide.active a{
+color: black;
+text-decoration: underline;
+font-weight: bold;
+}
+
+@keyframes slide{
+0%{
+opacity: 0;
+transform: translateX(-15px);
+}
+100%{
+opacity: 1;
+transform: translateX(0px);
+}
+}
+
+.testimonials .sliders p{
+font-size: 18px;
+color:#ffffff;
+word-spacing: 2px;
+}
+
+.testimonials .sliders .client-info h3{
+font-weight: bold;
+color:#fff;
+font-size: 18px;
+margin: 30px 0 10px;
+}
+
+.testimonials .sliders .client-info span{
+display:block;
+font-size:16px;
+color:#febd01;
+}
+
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /*background-color: #ff7f00;*/
+  padding-top: 50px;
+  /*background-color: transparent;*/
+  /*background-color: rgba(0,0,0,0.4);*/
+}
+
+.modal-header1 {
+  padding: 2px 16px;
+  background-color: #660033;
+  border-radius: 15px 50px 0px 0px;
+  color: white;
+}
+
+.modal-content1 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 5px solid #660033;
+  border-radius: 15px 50px;
+  width: 50%;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close1 {
+  position: sticky;
+  left: 100%;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+  cursor: pointer;
+
+}
+
+.testimonials .sliders-indicator{
+text-align: center;
+padding-top: 30px;
+}
+
+.testimonials .sliders-indicator img{
+max-height: 80px;
+max-width: 80px;
+border-radius: 50%;
+display: inline-block;
+margin: 0 8px;
+opacity: 0.2;
+border:4px solid #000000;
+cursor: pointer;
+transition: opacity 1s ease;
+}
+
+.testimonials .sliders-indicator img.active{
+opacity: 1;
+}
+
+.container1{
+  margin: 10px;
+}

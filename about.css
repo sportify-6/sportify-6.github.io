@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+}
+#about{
+  /*background-color: red;*/
+  height: 98vh;
+}
+.about{
+  /*background-color: blue;*/
+  /*max-height:1200px;*/
+  height: 98vh;
+  margin: 4vh 2vw;
+  position: relative;
+  padding:2.5vh 5vw;
+}
+.about h1 {
+  text-align: center;
+color:000000;
+text-transform: uppercase;
+font-family:"Double Struck";
+font-weight: bold;
+font-size: 3vw;
+}
+
+.about p {
+  font-family:"Imprint MT shadow";
+  font-size: 1.7vw;
+  /*text-align: center;*/
+  margin: 4vh 2vw;
+}
+.about b{
+  color: #660033;
+  font-size: 30px;
+}
+
+.about .first {
+	font-size: 40px;
+	color:#660033;
+}
+.about .center {
+  margin: 1.2vh 9.5vw;
+  width: 80%;
+  border: .2vh solid black;
+  padding: 3vh 1vw;
+  color:black;
+}
+.center{
+  width: 600vw; height: 85vh;
+  background-color: white;
+  position: relative;
+  box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
+  padding: 6vh 5vw;
+}
+ .center:before{
+  mix-blend-mode:multiply;
+  filter:none;
+  z-index: -1;
+  content:'';
+  width:calc(100% + (1vw * 2));
+  height:calc(100% + (3vh * 2));
+  position: absolute;
+  display: block;
+  animation: border 10s ease-in-out infinite;
+  transform:translateX(-50px) translateY(-50px);
+}
+@keyframes border {
+  0%, 100% {
+    -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+            clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+  }
+  50% {
+    -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+            clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+  }
+}
+.center:before {
+  background-color: #AA4465;
+    clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+}
+
+.center:hover:after{
+  animation-delay: -0.1s;
+}
+.center:hover:before, .box:hover:after {
+
+          animation-duration: 0.2s;
+}
+
+
+@media only screen and (max-width: 700px)  {
+  #about{
+    height:60vh;
+  }
+  .center{
+  width: 600vw; height: 45vh;
+  }
+}
+
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+  .about{
+    height:60vh;
+  }
+  .center{
+  width: 800vw; 
+  height: 60vh;
+}
+}
+
+@media only screen and (min-width: 901px) and (max-width:1200px){
+  .about{
+    height:60vh;
+  }
+
+  .center{
+  width: 900vw; height: 75vh;
+}
+}

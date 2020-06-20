@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trainee - Sportify</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style_trainee.css">
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-sm" style="background-color: #660033">
+	  <!-- Brand/logo -->
+	  <a class="navbar-brand" href="#">
+	    <img src="sportify1.png" alt="logo" style="width:40px;">
+	  </a>
+	  
+	  <!-- Links -->
+	  <ul class="navbar-nav mr-auto">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">SPORTIFY</a>
+	    </li>
+	  </ul>
+	  <ul class="nav navbar-nav navbar-right">
+	  	<li class="nav-item">
+	  		<a class="nav-link" href="index.html">LOGOUT</a>
+	  	</li>
+	  </ul>
+	</nav>
+
+	<div class="container1">
+		<div class="card" style="width:700px">
+			<div class="row">
+			  <div class="col-sm-6">
+			    <img class="card-img" src="coach.jpeg" alt="Card image" style="height: 180px;" />
+			  </div>
+			  <div class="col-sm-6">
+			    <div class="card-body-right">
+			      <h4 class="card-title">Coach Name</h4>
+			      <p class="card-text">National level player<br>India</p><br>
+			      <button onclick="document.getElementById('view_details').style.display='block'">See Profile</button>
+			    </div>
+			  </div>
+		  	</div> 
+		</div>
+	</div>
+
+	<div class="profile-card">
+		<div class="image-container">
+			<center>
+				<img src="trainee.jpg" style="width:50%">
+				<div class="title">
+					<h2>ARJUN</h2>
+				</div>
+			</center>
+		</div>
+		<div class="main-container">
+			<p><strong>ABOUT ME: </strong> I am Arjun I am good in sports and basketball state level player</p>
+			<p><strong>LOCATION:</strong></strong>  kanchepuram</p>
+            <p><strong>MAIL ID:</strong>  saran123@gmail.com</p>
+            <p><strong>SPORT SELECTED:</strong> Basketball</p>
+            <p><strong>COACH NAME: </strong>Mr:Tamilselven</p>
+            <p><strong>MY PREVIOUS WORK:</strong> Won gold mede in basketball at state level.</p>
+            <p><strong>MATCHES PLAYED:</strong>  8</p>
+            <p><strong>MATCHES WON:</strong>  4</p>
+		</div>
+	</div>
+
+	<div class="change_coach">
+		<input type=button onClick="parent.location='trainee_af_signup.html'" value='Change Coach' class="ccbtn">
+	</div>
+
+	<div class="container-fluid" id="not_completed">
+		<h1 id="heading">Tasks</h1>
+		<div class="container" id="task_1">
+			<div class="card" style="width:800px">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card-body">
+							<h4 class="card-title">Task name 1</h4>
+							<p class="card-text">Task description<br>Helo do this exercise ten times for two days </p>
+						</div>
+					</div>
+					<div class="col-sm-6" style="position: relative; right: -20%; top: 35%;">
+						<h6> Upload your video</h6>
+					</div>
+					<div class="col-sm-6" style="position: relative; left: 550px; bottom: 100px;">
+						<input type="file" id="myfile" name="myfile" value="Upload video">
+					</div>
+					<div class="col-sm-6" style="position: absolute; right: -20%; top: 50%;">
+						<button onclick="document.getElementById('task_popup').style.display='block'">See task</button>
+					</div>
+					<div class="col-sm-6" style="position: absolute; right: -35%; top: 50%;">
+						<button onclick="move(task_1)">Done</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="task_2">
+			<div class="card" style="width:800px">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card-body">
+							<h4 class="card-title">Task name 2</h4>
+							<p class="card-text">Task description<br>Helo do this exercise ten times for two days </p>
+						</div>
+					</div>
+					<div class="col-sm-6" style="position: relative; right: -20%; top: 35%;">
+						<h6> Upload your video</h6>
+					</div>
+					<div class="col-sm-6" style="position: relative; left: 550px; bottom: 100px;">
+						<input type="file" id="myfile" name="myfile" value="Upload video">
+					</div>
+					<div class="col-sm-6" style="position: absolute; right: -20%; top: 50%;">
+						<button onclick="document.getElementById('task_popup').style.display='block'">See task</button>
+					</div>
+					<div class="col-sm-6" style="position: absolute; right: -35%; top: 50%;">
+						<button onclick="move(task_2)">Done</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container_fluid2" id="completed">
+		<h1 id="heading">Completed tasks</h1>
+		<div class="container" id="task_2">
+			<div class="card" style="width:800px">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card-body">
+							<h4 class="card-title">Task name 0</h4>
+							<p class="card-text">Task description<br>Helo do this exercise ten times for two days </p>
+						</div>
+					</div>
+					<div class="col-sm-6" style="position: relative; right: -20%; top: 35%;">
+						<h6> Upload your video</h6>
+					</div>
+					<div class="col-sm-6" style="position: relative; left: 550px; bottom: 100px;">
+						<input type="file" id="myfile" name="myfile" value="Upload video">
+					</div>
+					<div class="col-sm-6" style="position: absolute; right: -20%; top: 50%;">
+						<button onclick="document.getElementById('task_popup').style.display='block'">See task</button>
+					</div>
+					<div class="col-sm-6" style="position: absolute; right: -35%; top: 50%;">
+						<button onclick="move(task_2)">Done</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="task_popup" class="modal">
+        <div class="modal-content">
+          	<div class="modal-header">
+				<h2> Task name
+					<span onclick="document.getElementById('task_popup').style.display='none'" class="close">&times;</span> 
+				</h2>
+			</div>
+			<p> <b>Task description</b><br> Do this task 5 times a day<br>Continue this for 2 days</p><br>
+			<h6>Refer this video for task</h6>
+			<center>
+				<video width="300" height="200" controls>
+					<source src="video1.mp4" type="video/mp4">
+				</video>
+			</center>
+		</div>
+	</div>
+
+	<div id="submit_popup" class="modal">
+        <div class="modal-content">
+          	<div class="modal-header">
+				<h2> Task name
+					<span onclick="document.getElementById('submit_popup').style.display='none'" class="close">&times;</span> 
+				</h2>
+			</div>
+			<p> <b>Task description</b><br></p>
+			<h6>Reference video (optional)</h6>
+			<input type="file" id="myfile" name="myfile">
+			<center>
+				<button onclick="document.getElementById('submit_popup').style.display='none'" style="width: 30%; margin: 10px;">Done</button>
+			</center>
+		</div>
+	</div>	
+
+	<div id="view_details" class="modal">
+        <div class="modal-content">
+          	<div class="modal-header">
+				<h2> Coach
+					<span onclick="document.getElementById('view_details').style.display='none'" class="close">&times;</span> 
+				</h2>
+			</div>
+			<div class="image-container">
+					<center>
+						<img src="coach.jpeg" style="width:50%">
+						<div class="title">
+							<h2>Dhoni</h2>
+						</div>
+					</center>
+			</div>
+			<div class="main-container">
+					<p><strong>ABOUT ME: </strong> I am Dhoni I am good in sports and basketball state level player</p>
+					<p><strong>LOCATION:</strong></strong>  kanchepuram</p>
+		            <p><strong>MAIL ID:</strong>  saran123@gmail.com</p>
+		            <p><strong>SPORT SELECTED:</strong> Basketball</p>
+		            <p><strong>COACH NAME: </strong>Mr:Tamilselven</p>
+		            <p><strong>MY PREVIOUS WORK:</strong> Won gold mede in basketball at state level.</p>
+		            <p><strong>MATCHES PLAYED:</strong>  8</p>
+		            <p><strong>MATCHES WON:</strong>  4</p>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript" src="script_trainee.js"></script>
+</body>
+</html>

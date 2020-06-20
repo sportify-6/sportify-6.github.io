@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SportifyABCP </title>
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main1.css">
+	<link rel="stylesheet" type="text/css" href="style_signup.css">
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<link rel="stylesheet" type="text/css" href="testimonial.css">
+	<link rel="stylesheet" type="text/css" href="contactus.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<!--  NAVIGATION AND LOGO-->
+    <nav id="nav">
+    	<input type="checkbox" id="check">
+    	<label for="check">
+    		<i class="fa fa-bars" aria-hidden="true" id="btn"></i>
+
+    		<i class="fa fa-times" aria-hidden="true" id="cancel"></i>
+
+    	</label>
+    	<img src="sportify1.png">
+      <h3>SPORTIFY</h3>
+      <ul>
+    	<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#contactus">Contact</a></li>
+    	</ul>
+    </nav>
+
+    <div id="id01" class="modal">
+        <form class="modal-content" action='none'>
+          <div class="modal-header">
+            <h2>Login - Trainer
+              <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+            </h2>
+          </div>
+          <div class="container">
+            <hr>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <span>Don't have an account? <a data-target="#form1" data-toggle="modal" href="#form1" class="signup_trainer" onclick="document.getElementById('form1').style.display='block';document.getElementById('id01').style.display='none'">Sign Up</a></span><br>
+
+            <div class="clearfix">
+              <input type="button" onclick="parent.location='coach_af_signup.html'" value="Login" class="signupbtn">
+            </div>
+          </div>
+        </form>
+      </div>
+
+       <div id="id02" class="modal">
+        <form class="modal-content" action="/action_page.php">
+          <div class="modal-header">
+            <h2>Login - Trainee
+              <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+            </h2>
+          </div>
+          <div class="container">
+            <hr>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <span>Don't have an account? <a data-target="#form2" data-toggle="modal" href="#form1" class="signup_trainer" onclick="document.getElementById('form2').style.display='block';document.getElementById('id02').style.display='none'">Sign Up</a></span>
+
+            <div class="clearfix">
+              <input type="button" onclick="parent.location='trainee.html'" value="Login" class="signupbtn">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="form1" class="modal">
+        <form class="modal-content" action="/action_page.php">
+          <div class="modal-header">
+            <h2>Sign Up - Trainer
+              <span onclick="document.getElementById('form1').style.display='none'" class="close">&times;</span>
+            </h2>
+          </div>
+          <div class="container">
+            <hr>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="age"><b>Age</b></label>
+            <input type="text" placeholder="Enter Age" name="age" required> 
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="game"><b>Game</b></label>
+            <input type="text" placeholder="Enter Game" name="game" required>
+
+            <label for="city"><b>City</b></label>
+            <input type="text" placeholder="Enter City" name="city" required>
+
+            <label for="level"><b>Upto which level you have played</b></label>
+            <input type="text" placeholder="Enter Level" name="level" required>
+
+            <label for="myfile"><b>Proof for above mentioned</b></label><br><br>
+            <input type="file" id="myfile" name="myfile">
+
+            <p>You will be notified in your mail</p>
+
+            <div class="clearfix">
+              <input type="button" onclick="parent.location='coach_af_signup.html'" value="Sign Up" class="signupbtn">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="form2" class="modal">
+        <form class="modal-content" action="/action_page.php">
+          <div class="modal-header">
+            <h2>Sign Up - Trainee
+              <span onclick="document.getElementById('form2').style.display='none'" class="close">&times;</span>
+            </h2>
+          </div>
+          <div class="container">
+            <hr>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="age"><b>Age</b></label>
+            <input type="text" placeholder="Enter Age" name="age" required>     
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="game"><b>Game</b></label>
+            <input type="text" placeholder="Enter Game" name="game" required>
+
+            <label for="city"><b>City</b></label>
+            <input type="text" placeholder="Enter City" name="city" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+              <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
+              <input type="button" onclick="parent.location='trainee_af_signup.html'" value="Sign Up" class="signupbtn">
+            </div>
+          </div>
+        </form>
+      </div>
+
+<!-- HOME LOGIN SIGNUP -->
+<section class="login_page" id="home">
+      <img src="track_bg.jpeg" width="359px" height="500px">
+      <button id="btn_login1" onclick="document.getElementById('id01').style.display='block'">Login - Trainer</button>
+      <button id="btn_login2" onclick="document.getElementById('id02').style.display='block'">Login - Trainee</button>
+      
+      
+
+     
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="about" >
+	<h1>ABOUT</h1>
+
+	<div class="center">
+		<p><b class="first">S</b>ports has gained tremendous popularity all over the globe and this healthy trend is likely to continue in the future also. Naturally political influence, gender discrimination and wealth  inequalities between the rich and the poor in sports has gained over the years.Sportify reduces all these inequalities by supporting talented youths of all kinds of background and gender who has craving to achieve in sports.<br>
+	        <br><b>Trainer</b> is the sportsman, whom due to certain situations or politics cannot continue their career as a sportsman and this app helps them to continue their passion by helping them become a coach.<br>
+            <br><b>Trainee</b> is the person who has limited access to information, resources, opportunities and programmes for participation, training and competition.</br>
+            <br>The ultimate aim of this web application is to provide the talented youth with reasonable support given by the coach to train the trainee through interaction.</br></p>
+    </div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<div id="modal1" class="modal1">
+          <div class="modal-content1">
+            <div class="modal-header1">
+              Testimonial
+              <span onclick="document.getElementById('modal1').style.display='none'" class="close1">&times;</span>
+            </div>
+            <div class="container1">
+              Hearing on this project i believe a great initiative has been taken and to take this initiative that too as a girl needs more courage as our society is too dominent on men.<br><br>
+              This is the first time i have heard about a project like this where talent needs to be identified and trained by a professional who are willing to take this as a passion.Through this more talents could be identified and they can be taken to the limelight with the help for of professionally and skillfull athletes.<br><br>
+              As a cricketer i know how an individual feels before and after getting the right place for them to bring out their talents and i hope this will be a perfect platform for many of them and for the coaches who are willing to guide the young champs in a perfect path.<br><br>
+              And finally i need to say this that you have done a wonderful job and i am really proud of what you have done.As a women you have set a right example and i am proud that my Sister has done a great job.Hope you will continue to do much more innovative projects and Wishing you most and more.<br><br>
+                You girls have done an amazing job as i said it needs immense courage as a women to take this idea and i am proud of each and every one who are a part of this. Keep rocking with your innovative ideas. Wishing you all success and i am really proud of you girls.<br><br><br><br>
+            </div>
+          </div>
+        </div>
+<div class="testimonials" id="testimonials">
+	<div class="container">
+		<div class="title">
+			<h1>Testimonials</h1>
+		</div>
+		<div class="sliders">
+			<div class="slide active">
+				<p>"As a sportsman i know how it feels for a individual to get oppurtunities in a field. That to for a person who is from an ordinary background who doesnt have a right platform to showcase his/her talents. "</p>
+				<!-- I have added code for popup here -->
+				<a data-target="#modal1" data-toggle="modal" href="#modal1" class="signup_trainer" onclick="document.getElementById('modal1').style.display='block';">Read More</a>
+				
+				<!-- Popup Ends here -->
+				<div class="client-info">
+					<h3>Yathin</h3>
+					<span>Cricketer.</span>
+				</div>
+			</div>
+			<div class="slide">
+				<p>"Its easy to say but hard to do; But my students have done it.It gives me immense pleasure to see the outcome of my students effort in the form of SPORTIFY.<br><br>
+				Yeah it’s a wonderful web application or I should say a wonderful weapon which unites sports aspirants irrespective of any ethos."</p>
+				<div class="client-info">
+					<h3>A.Alvin Kalicharan</h3>
+					<span>Associate Professor.</span>
+					<span>Panimalar Engineering College</span>
+				</div>
+			</div>
+			<div class="slide">
+				<p>“I just wanted to share a quick note and let you know that you guys do a really good job."</p><div class="client-info">
+					<h3>Vignesh</h3>
+					<span>Student</span>
+				</div>
+			</div>
+		</div>
+		<div class="sliders-indicator">
+			<img src="03.jpeg"  class="active" alt="img" data-id="0"/>
+			<img src="02.jpeg" alt="img" data-id="1"/>
+			<img src="01.jpeg" alt="img" data-id="2"/>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT -->
+<section id="contactus">
+	<div class="container">
+		<h2> Contact Us</h2>
+		<p> Our Day Isn’t Over Until We’ve Made Yours </p>
+		<div class="contact-form">
+			<!-- left side -->
+			<div >
+				<form>
+					<input type="text" placeholder="First Name" required class="input">
+					<input type="text" placeholder="Last Name" required class="input">
+					<input type="text" placeholder="Email" required class="input">
+					<input type="text" placeholder="Subject" required class="input">
+					<textarea name="message" placeholder="Message" rows="5" cols="33" required></textarea><br>
+					<button class="submit"> Send</button>
+				</form>
+				
+			</div>
+			
+			<!-- right side -->
+			<div>
+				<i class="fa fa-envelope" aria-hidden="true"></i><span class="form-info"> sportifyabcp@gmail.com</span><br>
+				<i class="fa fa-instagram" aria-hidden="true"></i><span class="form-info">sportify_6</span>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
